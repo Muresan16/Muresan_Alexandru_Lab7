@@ -8,7 +8,7 @@ using SQLiteNetExtensions.Attributes;
 
 namespace Muresan_Alexandru_Lab7.Models
 {
-    internal class Product
+    public class Product
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

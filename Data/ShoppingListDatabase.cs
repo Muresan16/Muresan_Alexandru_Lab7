@@ -56,12 +56,27 @@ namespace Muresan_Alexandru_Lab7.Data
             shoplistid);
         }
 
+        public Task<int> DeleteListProductAsync (ListProduct listp)
+        {
+            return _database.DeleteAsync(listp);
+        }
+
+        public Task<List<ListProduct>> GetListProducts()
+        {
+            return _database.QueryAsync<ListProduct>("select * from ListProduct");
+        }
+
         internal Task SaveShopListAsync(ShopList slist)
         {
             throw new NotImplementedException();
         }
 
         internal Task DeleteShopListAsync(ShopList slist)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal Task GetListProductsAsync()
         {
             throw new NotImplementedException();
         }
