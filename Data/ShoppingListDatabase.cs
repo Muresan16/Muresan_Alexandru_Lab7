@@ -56,6 +56,15 @@ namespace Muresan_Alexandru_Lab7.Data
             shoplistid);
         }
 
+        internal Task SaveShopListAsync(ShopList slist)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal Task DeleteShopListAsync(ShopList slist)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
